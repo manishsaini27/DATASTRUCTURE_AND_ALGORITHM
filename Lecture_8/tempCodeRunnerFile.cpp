@@ -1,0 +1,1 @@
+cout<< "The total number of set bits" <<count<< endl;
