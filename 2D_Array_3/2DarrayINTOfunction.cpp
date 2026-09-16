@@ -6,7 +6,7 @@ void change(int a[]) {
     a[0] = 9;
 }
 
-void change2d(int array[3][3]){ // function me 2d array ka size dena jruri hota hai 
+void change2d(int array[3][3]){ // function me 2d array ka size dena pdta hai 
     array[0][0] = 100;
 }
 int main() {
