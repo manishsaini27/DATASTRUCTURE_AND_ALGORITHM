@@ -3,7 +3,7 @@
 using namespace std;
 
 void change2DVector(vector<vector<int>> &v) {
-    v[0][0] = 100;
+    v[0][1] = 100;
 }
 int main() {
     vector<int> v1;
