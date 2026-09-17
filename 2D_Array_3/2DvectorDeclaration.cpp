@@ -19,12 +19,12 @@ int main() {
         for(int j=0; j<4;j++) {
             cout<<v[i][j]<<" ";
         }
-
+  
         cout<<endl;
     }
     cout<<v.size() <<endl;// row size 
     cout<<v[0].size(); //it prints the column size of the 2d vector
-    cout<<v[1].size();\
+    cout<<v[1].size();
     cout<<v[2].size();
 
   
