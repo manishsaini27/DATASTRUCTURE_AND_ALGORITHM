@@ -56,7 +56,7 @@ int main() {
 
     harsh.setHealth(45);
     harsh.setAge(53);
-    harsh.setscore(199);
+    harsh.setscore(200);
     harsh.setIsalive(true);
 
     raghav.setHealth(23);
@@ -83,7 +83,9 @@ int main() {
     cout<<add(harsh,raghav);
 
     cout<<add(harsh ,raghav) <<endl;
-    Player sanket = getMaxScorePlayer(harsh,raghav);
-    cout<<sanket.getscore();
+    Player sanket = getMaxScorePlayer(harsh,raghav);  //dono player me se jiska bhi score max hoga we return ker dega....jo ki sanket nam ke new object me store hoga 
+    cout<<sanket.getscore()<<endl;
+    // ye hame jis player ka max score hoga we print kerke dega... jiase ye harsh ka score print kerke dega
+    cout<<sanket.getHealth();
 
 }
