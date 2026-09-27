@@ -52,7 +52,19 @@ Player getMaxScorePlayer(Player a, Player b) {
 
 int main() {
     Player harsh;  //Object Creation, statically
-    Player raghav;
+    Player raghav; // compile time ,static allocation
+
+
+    Player *urvi  = new Player; // run time ,dynamic allocation;
+    Player urviObject  = *urvi;
+    
+    // if we want to work with the addres 
+    // Player *urvi = new Player;
+    // for set the value
+    // *urvi.setHealth(234);
+    //ALSO WE CAN DO THIS WITH THAT 
+    // urvi-> setHealth(20);
+
 
     harsh.setHealth(45);
     harsh.setAge(53);
@@ -65,22 +77,14 @@ int main() {
     raghav.setIsalive(false);
 
 
-    cout<<"NEXT IS harsh" <<endl;
+    urviObject.setscore(40);
+    urviObject.setAge(24);
 
 
-    cout<<harsh.getHealth()<<endl;
-    cout<<harsh.getAge()<<endl;
-    cout<<harsh.getscore()<<endl;
-    cout<<harsh.isalive()<<endl;
 
-    cout<<"NEXT IS RAGHAV"<<endl;
+    cout<<urviObject.getscore()<<endl;
 
-    cout<<raghav.getHealth()<<endl;
-    cout<<raghav.getAge()<<endl;
-    cout<<raghav.getscore()<<endl;
-    cout<<raghav.isalive()<<endl;
-
-    cout<<add(harsh,raghav);
+    cout<<add(harsh,raghav)<<endl;;
 
     cout<<add(harsh ,raghav) <<endl;
     Player sanket = getMaxScorePlayer(harsh,raghav);  //dono player me se jiska bhi score max hoga we return ker dega....jo ki sanket nam ke new object me store hoga 
