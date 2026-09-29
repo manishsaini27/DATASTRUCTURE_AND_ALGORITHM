@@ -67,35 +67,24 @@ class Hero{
     void setName(char name[]){
         strcpy(this->name,name);
     }
+
+    //DESTRUCTURE 
+    ~Hero() {
+        cout<< "Destructure bhai called"<<endl;
+    }
 };
 
 int main() {
+    //statis
+    Hero a;
+
+    //Dynamic
+    
+    Hero *b  =new Hero();
+    //manually called destructure
+    
+    delete b;
 
 
-    Hero hero1;
-    hero1.setHealth(12);
-    hero1.setLevel('D');
-    char name[7] = "Babber";
-    hero1.setName(name);
-    //hero1.print();
-
-
-
-    //use defult copy constructure 
-
-    Hero hero2(hero1);
-    //hero2.print();
-
-    hero1.name[0]= 'G';
-    hero1.print();
-
-    hero2.print() ;
-
-    hero1 = hero2;  // hero1 me hero2 ki values copy ker di hai..
-    hero1.print();
-    hero2.print();
-
-
-
-
+    return 0;
 }
