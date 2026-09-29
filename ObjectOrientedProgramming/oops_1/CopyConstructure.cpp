@@ -36,9 +36,13 @@ class Hero{
     }
 
     void print() {
-        cout<<"Health " << this->health<<endl;
-        cout<<"Level"<<this->level<< endl;
+        cout<<endl;
+        cout<<"[ Name: "<<this->name<<" ,";
+        cout<<"Health :" << this->health<<" ,";
+        cout<<"Level"<<this->level<<" ]";
+        cout<<endl<<endl;
     }
+
     // Getter 
     int getHealth() {
         return health;
@@ -74,12 +78,16 @@ int main() {
 
 
 
+    //use defult copy constructure 
+    Hero hero2(hero1);
+    hero2.print();
 
-    Hero S(70,'C');
-    S.print();
+    hero1.name[0]= 'G';
+    hero1.print();
 
-    //Copy Constructure 
-    Hero R(S);
-    R.print();
+    hero2.print() ;
+
+
+
 
 }
