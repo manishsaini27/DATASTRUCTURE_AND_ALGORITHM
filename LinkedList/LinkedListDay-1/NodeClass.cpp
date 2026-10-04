@@ -13,16 +13,14 @@ int main(){
     // 10 20 30 40 
     Node a(10);
     Node b(20);
-    Node c;
-    Node d;
+    Node c(30);
+    Node d(40);
     
 
-    // forming  Linked List 
-
-    a.next = &b;
-    b.next = &c;
-    c.next = &d;
-    d.next = NULL;
+   cout<<a.val<<endl;
+   cout<<b.val<<endl;
+   cout<<c.val<<endl;
+   cout<<d.val<<endl;
      
 
 
