@@ -1,4 +1,4 @@
-// #include<iostream>
+ // #include<iostream>
 // using namespace std;
 // class Student {
 // public:    
@@ -17,7 +17,7 @@
 //     cout<<s.marks<<endl;
 // }
 
-
+  
 
 
 
@@ -28,13 +28,13 @@
 //     string name;
 //     int rollno;
 //     int marks;
-//     Student(string name, int rollno,  int marks) {
+//     Student(string name, int rollno,  int marks) { //if the parameter name is same as class student then we use the this key word to make a differnece.....
 //         this->name = name;
 //         this->rollno = rollno;
 //         this->marks= marks;
 //     }
 // };
-// void change(Student &s) {
+// void change(Student &s)  { // using & we use pass by reference..
 //     s.name = "Harsh";
 // }
 // int main() {
@@ -67,11 +67,12 @@
 // }
 // int main() {
 //     Student s("Manish", 45 ,77);
-//     Student* ptr = &s;
+//     Student* ptr = &s;  // we creted a student type pointer that stores the student type values like s 
 //     cout<<s.name<<endl;
 //     // (*ptr).name= "Harsh";
+       // using this we change the name 
 
-//     ptr->name = "Snaket";
+//     ptr->name = "Snaket";// this is the second mathod of without using * ...
 //     cout<<s.name<<endl;
 // }
 

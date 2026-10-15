@@ -40,7 +40,7 @@ int main(){
     //IF WE WANT TO PRINT ALL THE VALUES USING LOOP 
     Node temp = a;
     while(1) { // using 1 while loop runs infinity times
-        cout<<temp.val<<" ";
+        cout<<temp.val<<" ";  // first we print the value of the linked list.. then we applay a condition of the temp.next == null then break it..
         if(temp.next== NULL){
             break;
         }
