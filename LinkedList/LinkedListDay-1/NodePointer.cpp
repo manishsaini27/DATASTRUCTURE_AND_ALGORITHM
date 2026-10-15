@@ -7,7 +7,7 @@ class Node{    //LINKED LIST PROPER NODE
     Node(int val){
         this->val = val;
         this->next = NULL;   // by default null  
-
+ 
     }
 };
 // A S A FUNCTION FOR PRINTING THE ELEMENT OF THE LINKED LIST
