@@ -9,7 +9,7 @@ class Node{
         this->next = NULL;
     }
 };
-class LinkedList{
+class LinkedList{  //User defined data structure
 public:    
     Node* head ;
     Node* tail ;
@@ -46,4 +46,5 @@ int main(){
     ll.display();
     ll.insertAtEnd(30);
     ll.display();
-}
+    cout<<ll.size;
+} 

@@ -10,14 +10,19 @@ class Node{    //LINKED LIST PROPER NODE
 
     }
 };
-// AS A FUNCTION FOR PRINTING THE ELEMENT OF THE LINKED LIST
-// void display(Node* head){
-//     Node* temp = head;
-//     while(temp!=NULL){
-//         cout<<temp->val<<" ";
-//         temp = temp->next;
-//     } 
-// }
+// A S A FUNCTION FOR PRINTING THE ELEMENT OF THE LINKED LIST
+void display(Node* head){
+    Node* temp = head;
+    while(temp!=NULL){
+        cout<<temp->val<<" ";
+        temp = temp->next;
+    } 
+}
+void insertAtEnd(Node* head, int val) {
+    Node* t = new Node(val);
+    while(head->next != NULL) head = head->next;
+    head->next = t;
+}
 
 int main() {
     Node* a = new Node(10);
@@ -29,13 +34,15 @@ int main() {
     b->next = c;
     c->next = d;
 
-    //display(a);
+    display(a);
+    insertAtEnd(a,80);
+    display(a);
 
     //cout<<a->next->next->next->val;  // this give 40 as a output;
- 
-    Node* temp = a;
-    while(temp!=NULL) {
-        cout<<temp->val<<" ";
-        temp = temp->next;
-    }
+    // cout<<endl;
+    // Node* temp = a;
+    // while(temp!=NULL) {
+    //     cout<<temp->val<<" ";
+    //     temp = temp->next;
+    // }
 }
