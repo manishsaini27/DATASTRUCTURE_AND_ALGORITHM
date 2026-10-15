@@ -53,7 +53,7 @@ int main(){
     ll.insertAtEnd(20);
     ll.insertAtEnd(30);
     ll.insertAtEnd(40);
-    ll.display();
+    ll.display(); 
     ll.insertAtHead(50);
     ll.display();
     
