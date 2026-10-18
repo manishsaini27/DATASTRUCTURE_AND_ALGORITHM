@@ -36,6 +36,7 @@ int main() {
 
     display(a);
     insertAtEnd(a,80);
+    cout<<endl;
     display(a);
 
     //cout<<a->next->next->next->val;  // this give 40 as a output;
