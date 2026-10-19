@@ -37,7 +37,7 @@ public:
         size++;
     }
     void insertAtindex(int idx,int val) {
-        if(idx<0 || idx>size ) cout<<"Invalid index"<<endl;
+        if(idx<0 || idx>size ) cout<<"Invalid index"<<endl; 
         
         else if(idx ==0) insertAtHead(val);
         else if(idx==size) insertAtEnd(val);

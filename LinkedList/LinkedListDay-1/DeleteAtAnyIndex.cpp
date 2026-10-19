@@ -65,7 +65,8 @@ public:
         if(idx <0 || idx>=size){
             cout<<"Invalid Index";
             return;
-        }else if(idx == 0 ) return deleteAtHead();
+        }
+        else if(idx == 0 ) return deleteAtHead();
         else if(idx==size-1) return deletAtTail();
         else{
             Node* temp  = head;

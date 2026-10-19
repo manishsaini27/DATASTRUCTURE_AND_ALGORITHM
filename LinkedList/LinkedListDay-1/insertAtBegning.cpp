@@ -18,12 +18,12 @@ public:
         head = tail = NULL;
         size = 0;
     }
-     void insertAtEnd(int val) {
+    void insertAtEnd(int val) {
         Node* temp  =new Node(val);
         if(size==0) head = tail = temp;
         else{
             tail->next = temp;
-            tail = temp;
+            tail = temp; 
         }
         size++;
     }
